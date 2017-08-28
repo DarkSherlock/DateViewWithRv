@@ -17,8 +17,6 @@ import com.liang.tind.dateviewdemo.view.DividerItemDecoration;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.animation.ObjectAnimator.ofFloat;
-
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
@@ -110,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         mUpAnimOut = ObjectAnimator.
                 ofFloat(mTvMonth, "translationY", translationY, translationY - tvMonthHeight);
         //向上弹进动画
-        mUpAnimIn =
+        mUpAnimIn =ObjectAnimator.
                 ofFloat(mTvMonth, "translationY", translationY + tvMonthHeight, translationY);
         mUpAnimOut.setDuration(ANIMATION_DURATION);
         mUpAnimIn.setDuration(ANIMATION_DURATION);
@@ -118,10 +116,10 @@ public class MainActivity extends AppCompatActivity {
         addUpAnimListener(mUpAnimIn);
 
         //向下弹出动画
-        mDownAnimOut =
+        mDownAnimOut =ObjectAnimator.
                 ofFloat(mTvMonth, "translationY", translationY, translationY + tvMonthHeight);
         //向下弹进动画
-        ObjectAnimator downAnimIn =
+        ObjectAnimator downAnimIn =ObjectAnimator.
                 ofFloat(mTvMonth, "translationY", translationY - tvMonthHeight, translationY);
 
         mDownAnimOut.setDuration(ANIMATION_DURATION);
