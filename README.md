@@ -1,6 +1,7 @@
 # DateViewWithRvDemo
 仿VPGAME客户端一个跟RecyclerView滑动有交互的控件
 具体看说明看：http://www.jianshu.com/p/9c43a835cfa9
+
 **先看VPGAME客户端的这个效果:**
 
 ![2017-08-28-10mzvp.gif](http://upload-images.jianshu.io/upload_images/5391751-ca46ae84b6186f0e.gif?imageMogr2/auto-orient/strip)
